@@ -1,1 +1,46 @@
 /*Schrijf hier jouw CSS*/
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+header, footer {
+    flex-basis: 110px;
+}
+
+nav, aside {
+    flex-basis: 25vw;
+}
+
+main, article {
+    flex-basis: auto;
+}
+
+header, footer, nav, aside {
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+main, article {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+nav {
+    order: 0;
+}
+
+article {
+    order: 1;
+}
+
+aside {
+    order: 2;
+}
